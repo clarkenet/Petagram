@@ -5,4 +5,9 @@
     <dimen name="btn_entrar_txt_size">20sp</dimen>
     <dimen name="btn_entrar_padding">20dp</dimen>
     <dimen name="btn_entrar_margin">20dp</dimen>
+    <dimen name="cv_radius">4dp</dimen>
+    <dimen name="ic_bone_size">25dp</dimen>
+    <dimen name="icon_margin">5dp</dimen>
+    <dimen name="icon_padding">2dp</dimen>
+    <dimen name="cv_txt_size">18sp</dimen>
 </resources>
