@@ -9,4 +9,14 @@
         android:orderInCategory="100"
         app:showAsAction="always"
         android:icon="@drawable/ic_star5"/>
+    <item
+        android:id="@+id/action_contacto"
+        android:title="@string/action_contacto"
+        android:orderInCategory="101"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        android:orderInCategory="102"
+        app:showAsAction="never"/>
 </menu>

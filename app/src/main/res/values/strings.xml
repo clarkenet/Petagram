@@ -2,4 +2,12 @@
     <string name="app_name">Petagram</string>
     <string name="entrar">ENTRAR</string>
     <string name="favoritos">Favoritos</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_contacto">Contacto</string>
+    <string name="tie_name_hint">Nombre</string>
+    <string name="tie_email_hint">Email</string>
+    <string name="tie_comments_hint">Comentarios</string>
+    <string name="btn_comments">Enviar Comentarios</string>
+    <string name="tv_autor">Autor: Kenneth Castillo</string>
+    <string name="tv_about">Soy Ingeniero en Sistemas Computacionales, apasionado por el desarrollo de aplicaciones dentro del mundo de la programación Java. Desde que conocí Android me encantó por su versatilidad, es por eso que estoy comenzando a crear aplicaciones en este SO.</string>
 </resources>

@@ -12,4 +12,5 @@
     <dimen name="cv_txt_size">18sp</dimen>
     <dimen name="fab_elevation">6dp</dimen>
     <dimen name="fab_margin">15dp</dimen>
+    <dimen name="tvAutor">15sp</dimen>
 </resources>

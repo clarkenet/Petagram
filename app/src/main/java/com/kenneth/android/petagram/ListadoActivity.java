@@ -62,10 +62,22 @@ public class ListadoActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        Intent intent;
+
         switch (item.getItemId()) {
 
             case R.id.action_favoritos:
-                Intent intent = new Intent(this, FavoritosActivity.class);
+                intent = new Intent(this, FavoritosActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.action_contacto:
+                intent = new Intent(this, ContactoActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.action_about:
+                intent = new Intent(this, AboutActivity.class);
                 startActivity(intent);
                 break;
 
