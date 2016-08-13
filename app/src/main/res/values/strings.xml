@@ -10,4 +10,7 @@
     <string name="btn_comments">Enviar Comentarios</string>
     <string name="tv_autor">Autor: Kenneth Castillo</string>
     <string name="tv_about">Soy Ingeniero en Sistemas Computacionales, apasionado por el desarrollo de aplicaciones dentro del mundo de la programación Java. Desde que conocí Android me encantó por su versatilidad, es por eso que estoy comenzando a crear aplicaciones en este SO.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

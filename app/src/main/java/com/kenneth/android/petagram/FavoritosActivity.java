@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import com.kenneth.android.petagram.com.kenneth.android.petagram.adapter.MascotaAdapter;
 import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
@@ -14,11 +15,18 @@ public class FavoritosActivity extends AppCompatActivity {
 
     ArrayList<Mascota> mascotas;
     RecyclerView rvMascotasFav;
+    Toolbar toolbarGral;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoritos);
+
+        toolbarGral = (Toolbar) findViewById(R.id.toolbarGral);
+        if (toolbarGral != null) {
+            setSupportActionBar(toolbarGral);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         rvMascotasFav = (RecyclerView) findViewById(R.id.rvMascotasFav);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
