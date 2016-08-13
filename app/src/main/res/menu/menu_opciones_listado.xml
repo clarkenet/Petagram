@@ -8,7 +8,7 @@
         android:title="@string/favoritos"
         android:orderInCategory="100"
         app:showAsAction="always"
-        android:icon="@drawable/ic_star5"/>
+        android:icon="@drawable/ic_star5_w"/>
     <item
         android:id="@+id/action_contacto"
         android:title="@string/action_contacto"

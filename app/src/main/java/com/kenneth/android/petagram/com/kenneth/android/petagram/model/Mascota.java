@@ -15,6 +15,12 @@ public class Mascota {
         this.rating = 0;
     }
 
+    public Mascota(int foto, String name, int rating) {
+        this.foto = foto;
+        this.name = name;
+        this.rating = rating;
+    }
+
     public int getFoto() {
         return foto;
     }
