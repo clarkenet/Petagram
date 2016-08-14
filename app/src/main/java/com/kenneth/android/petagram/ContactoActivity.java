@@ -15,6 +15,9 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -60,6 +63,57 @@ public class ContactoActivity extends AppCompatActivity {
         tieComments = (TextInputEditText) findViewById(R.id.tieComments);
         btnComments = (Button) findViewById(R.id.btnComments);
 
+        tieName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                tilName.setErrorEnabled(false);
+            }
+        });
+
+        tieEmail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                tilEmail.setErrorEnabled(false);
+            }
+        });
+
+        tieComments.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                tilComments.setErrorEnabled(false);
+            }
+        });
+
         btnComments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,6 +158,9 @@ public class ContactoActivity extends AppCompatActivity {
                     sendMail = new SendMail(comments, email, name);
                     if (sendMail.isSended()) {
                         Toast.makeText(ContactoActivity.this, "Mensaje enviado!", Toast.LENGTH_SHORT).show();
+                        tieName.setText("");
+                        tieEmail.setText("");
+                        tieComments.setText("");
                     } else {
                         Toast.makeText(ContactoActivity.this, "Error al enviar el mensaje!", Toast.LENGTH_SHORT).show();
                     }

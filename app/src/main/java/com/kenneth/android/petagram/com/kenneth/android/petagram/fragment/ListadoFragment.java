@@ -52,9 +52,9 @@ public class ListadoFragment extends Fragment {
         mascotas = new ArrayList<>();
         mascotas.add(new Mascota(R.drawable.puppy_black_brown, "Puppy"));
         mascotas.add(new Mascota(R.drawable.puppy_black_white, "Perry"));
-        mascotas.add(new Mascota(R.drawable.puppy_brown, "Aslan"));
+        mascotas.add(new Mascota(R.drawable.puppy_brown, "Balto"));
         mascotas.add(new Mascota(R.drawable.puppy_bulldog, "Pet"));
-        mascotas.add(new Mascota(R.drawable.puppy_husky, "Balto"));
+        mascotas.add(new Mascota(R.drawable.puppy_husky, "Aslan"));
         mascotas.add(new Mascota(R.drawable.puppy_labrador, "Lambda"));
         mascotas.add(new Mascota(R.drawable.puppy_pitbull, "Daddy"));
         mascotas.add(new Mascota(R.drawable.puppy_white, "Snow"));

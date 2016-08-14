@@ -12,7 +12,7 @@
     <dimen name="cv_txt_size">18sp</dimen>
     <dimen name="fab_elevation">6dp</dimen>
     <dimen name="fab_margin">15dp</dimen>
-    <dimen name="tvAutor">15sp</dimen>
+    <dimen name="tvAutor">25sp</dimen>
     <dimen name="civPerfil">150dp</dimen>
     <dimen name="cv_perfil_txt_size">25sp</dimen>
     <dimen name="cv_width_grid">100dp</dimen>
@@ -22,4 +22,6 @@
     <dimen name="icon_padding_grid">2dp</dimen>
     <dimen name="cv_txt_size_grid">14sp</dimen>
     <dimen name="rv_grid_spacing">6dp</dimen>
+    <dimen name="tv_margin_about">20dp</dimen>
+    <dimen name="tv_bio_about_txt">16sp</dimen>
 </resources>
