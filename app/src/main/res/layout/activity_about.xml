@@ -24,6 +24,12 @@
             android:textStyle="bold"
             android:text="@string/tv_autor"
             android:layout_marginBottom="@dimen/tv_margin_about"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTextSecondary"
+            android:layout_marginBottom="@dimen/tv_margin_about"/>
 
         <TextView
             android:layout_width="match_parent"
