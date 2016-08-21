@@ -33,15 +33,15 @@ public class BaseDatos extends SQLiteOpenHelper {
 
         String qRates = "CREATE TABLE " + Constantes.TB_RATES_MASCOTA + "(" +
                 Constantes.TB_RATES_MASCOTA_ID_RATES_MASCOTA + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                Constantes.TB_RATES_MASCOTA_ID_MASCOTA + "INTEGER, " +
-                Constantes.TB_RATES_MASCOTA_RATE + "INTEGER, " +
+                Constantes.TB_RATES_MASCOTA_ID_MASCOTA + " INTEGER, " +
+                Constantes.TB_RATES_MASCOTA_RATE + " INTEGER, " +
                 "FOREIGN KEY (" + Constantes.TB_RATES_MASCOTA_ID_MASCOTA + ") " +
                 "REFERENCES " + Constantes.TB_MASCOTA + "(" + Constantes.TB_MASCOTA_ID_MASCOTA + ")" +
                 ")";
 
         sqLiteDatabase.execSQL(qMascota);
         sqLiteDatabase.execSQL(qRates);
-        sqLiteDatabase.close();
+//        sqLiteDatabase.close();
 
     }
 
