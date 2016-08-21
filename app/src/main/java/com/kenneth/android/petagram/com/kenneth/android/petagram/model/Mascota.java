@@ -5,9 +5,13 @@ package com.kenneth.android.petagram.com.kenneth.android.petagram.model;
  */
 public class Mascota {
 
+    private int id;
     private int foto;
     private String name;
     private int rating;
+
+    public Mascota() {
+    }
 
     public Mascota(int foto, String name) {
         this.foto = foto;
@@ -19,6 +23,21 @@ public class Mascota {
         this.foto = foto;
         this.name = name;
         this.rating = rating;
+    }
+
+    public Mascota(int foto, int id, String name, int rating) {
+        this.foto = foto;
+        this.id = id;
+        this.name = name;
+        this.rating = rating;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getFoto() {

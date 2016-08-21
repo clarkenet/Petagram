@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/shop"
-    tools:context="com.kenneth.android.petagram.MainActivity">
+    tools:context=".com.kenneth.android.petagram.activity.MainActivity">
 
     <Button
         android:id="@+id/btnEntrar"

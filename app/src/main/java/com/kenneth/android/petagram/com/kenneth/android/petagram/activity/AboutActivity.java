@@ -1,8 +1,10 @@
-package com.kenneth.android.petagram;
+package com.kenneth.android.petagram.com.kenneth.android.petagram.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+
+import com.kenneth.android.petagram.R;
 
 public class AboutActivity extends AppCompatActivity {
 
