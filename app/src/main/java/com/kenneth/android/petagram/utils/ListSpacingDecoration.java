@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.utils;
+package com.kenneth.android.petagram.utils;
 
 import android.content.Context;
 import android.graphics.Rect;

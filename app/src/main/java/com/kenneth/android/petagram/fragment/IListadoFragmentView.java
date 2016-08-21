@@ -1,7 +1,7 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.fragment;
+package com.kenneth.android.petagram.fragment;
 
-import com.kenneth.android.petagram.com.kenneth.android.petagram.adapter.MascotaAdapter;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.adapter.MascotaAdapter;
+import com.kenneth.android.petagram.model.Mascota;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.database;
+package com.kenneth.android.petagram.database;
 
 /**
  * Created by kenneth on 20/08/16.

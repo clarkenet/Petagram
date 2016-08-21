@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.adapter;
+package com.kenneth.android.petagram.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

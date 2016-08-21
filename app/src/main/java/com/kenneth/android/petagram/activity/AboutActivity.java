@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.activity;
+package com.kenneth.android.petagram.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

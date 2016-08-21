@@ -1,10 +1,10 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.presenter;
+package com.kenneth.android.petagram.presenter;
 
 import android.content.Context;
 
-import com.kenneth.android.petagram.com.kenneth.android.petagram.fragment.IListadoFragmentView;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.ConstructorMascota;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.fragment.IListadoFragmentView;
+import com.kenneth.android.petagram.model.ConstructorMascota;
+import com.kenneth.android.petagram.model.Mascota;
 
 import java.util.ArrayList;
 

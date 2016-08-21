@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.fragment;
+package com.kenneth.android.petagram.fragment;
 
 
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.kenneth.android.petagram.R;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.adapter.MascotaAdapter;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.presenter.IListadoFragmentPresenter;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.presenter.ListadoFragmentPresenter;
+import com.kenneth.android.petagram.adapter.MascotaAdapter;
+import com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.presenter.IListadoFragmentPresenter;
+import com.kenneth.android.petagram.presenter.ListadoFragmentPresenter;
 
 import java.util.ArrayList;
 

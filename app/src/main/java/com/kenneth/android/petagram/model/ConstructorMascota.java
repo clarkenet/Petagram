@@ -1,11 +1,11 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.model;
+package com.kenneth.android.petagram.model;
 
 import android.content.ContentValues;
 import android.content.Context;
 
 import com.kenneth.android.petagram.R;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.database.BaseDatos;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.database.Constantes;
+import com.kenneth.android.petagram.database.BaseDatos;
+import com.kenneth.android.petagram.database.Constantes;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.model;
+package com.kenneth.android.petagram.model;
 
 /**
  * Created by kenneth on 2/08/16.

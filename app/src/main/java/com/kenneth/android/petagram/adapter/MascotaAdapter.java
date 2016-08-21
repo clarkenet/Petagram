@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.adapter;
+package com.kenneth.android.petagram.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kenneth.android.petagram.R;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.model.Mascota;
 
 import java.util.ArrayList;
 

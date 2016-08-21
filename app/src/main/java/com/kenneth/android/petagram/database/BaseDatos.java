@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.database;
+package com.kenneth.android.petagram.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.model.Mascota;
 
 import java.util.ArrayList;
 

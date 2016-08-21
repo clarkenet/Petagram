@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.activity;
+package com.kenneth.android.petagram.activity;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -11,9 +11,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.kenneth.android.petagram.R;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.adapter.PageAdapter;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.fragment.ListadoFragment;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.fragment.PerfilFragment;
+import com.kenneth.android.petagram.adapter.PageAdapter;
+import com.kenneth.android.petagram.fragment.ListadoFragment;
+import com.kenneth.android.petagram.fragment.PerfilFragment;
 
 import java.util.ArrayList;
 

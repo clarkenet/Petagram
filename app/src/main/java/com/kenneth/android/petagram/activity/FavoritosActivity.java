@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.activity;
+package com.kenneth.android.petagram.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.kenneth.android.petagram.R;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.adapter.MascotaAdapter;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.adapter.MascotaAdapter;
+import com.kenneth.android.petagram.model.Mascota;
 
 import java.util.ArrayList;
 
@@ -50,7 +50,7 @@ public class FavoritosActivity extends AppCompatActivity {
     }
 
     private void inicializarAdaptador() {
-        MascotaAdapter adapter = new MascotaAdapter(mascotas);
+        MascotaAdapter adapter = new MascotaAdapter(mascotas, this);
         rvMascotasFav.setAdapter(adapter);
     }
 

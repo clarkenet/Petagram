@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.activity;
+package com.kenneth.android.petagram.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -22,7 +22,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.kenneth.android.petagram.R;
-import com.kenneth.android.petagram.com.kenneth.android.petagram.utils.SendMail;
+import com.kenneth.android.petagram.utils.SendMail;
 
 public class ContactoActivity extends AppCompatActivity {
 

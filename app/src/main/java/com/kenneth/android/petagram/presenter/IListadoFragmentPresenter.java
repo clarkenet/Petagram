@@ -1,4 +1,4 @@
-package com.kenneth.android.petagram.com.kenneth.android.petagram.presenter;
+package com.kenneth.android.petagram.presenter;
 
 /**
  * Created by kenneth on 21/08/16.
