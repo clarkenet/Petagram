@@ -1,5 +1,6 @@
 package com.kenneth.android.petagram.com.kenneth.android.petagram.adapter;
 
+import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,9 +19,11 @@ import java.util.ArrayList;
 public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaViewHolder> {
 
     ArrayList<Mascota> mascotas;
+    Activity activity;
 
-    public MascotaAdapter(ArrayList<Mascota> mascotas) {
+    public MascotaAdapter(ArrayList<Mascota> mascotas, Activity activity) {
         this.mascotas = mascotas;
+        this.activity = activity;
     }
 
     @Override
