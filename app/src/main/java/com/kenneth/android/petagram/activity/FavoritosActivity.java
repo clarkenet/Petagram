@@ -9,14 +9,16 @@ import android.support.v7.widget.Toolbar;
 import com.kenneth.android.petagram.R;
 import com.kenneth.android.petagram.adapter.MascotaAdapter;
 import com.kenneth.android.petagram.model.Mascota;
+import com.kenneth.android.petagram.presenter.FavoritosActivityPresenter;
+import com.kenneth.android.petagram.presenter.IFavoritosActivityPresenter;
 
 import java.util.ArrayList;
 
-public class FavoritosActivity extends AppCompatActivity {
+public class FavoritosActivity extends AppCompatActivity implements IFavoritosActivityView {
 
-    ArrayList<Mascota> mascotas;
-    RecyclerView rvMascotasFav;
-    Toolbar toolbarGral;
+    private IFavoritosActivityPresenter presenter;
+    private RecyclerView rvMascotasFav;
+    private Toolbar toolbarGral;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,27 +32,24 @@ public class FavoritosActivity extends AppCompatActivity {
         }
 
         rvMascotasFav = (RecyclerView) findViewById(R.id.rvMascotasFav);
+        presenter = new FavoritosActivityPresenter(getBaseContext(), this);
+    }
+
+    @Override
+    public void generarLinearLayoutVertical() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-
         rvMascotasFav.setLayoutManager(linearLayoutManager);
-
-        inicializarListaMascotas();
-        inicializarAdaptador();
-
     }
 
-    private void inicializarListaMascotas() {
-        mascotas = new ArrayList<>();
-        mascotas.add(new Mascota(R.drawable.puppy_black_brown, "Puppy"));
-        mascotas.add(new Mascota(R.drawable.puppy_bulldog, "Pet"));
-        mascotas.add(new Mascota(R.drawable.puppy_husky, "Balto"));
-        mascotas.add(new Mascota(R.drawable.puppy_white, "Snow"));
-        mascotas.add(new Mascota(R.drawable.puppy_wolf, "Lobo"));
-    }
-
-    private void inicializarAdaptador() {
+    @Override
+    public MascotaAdapter crearAdapter(ArrayList<Mascota> mascotas) {
         MascotaAdapter adapter = new MascotaAdapter(mascotas, this);
+        return adapter;
+    }
+
+    @Override
+    public void inicializarAdapter(MascotaAdapter adapter) {
         rvMascotasFav.setAdapter(adapter);
     }
 

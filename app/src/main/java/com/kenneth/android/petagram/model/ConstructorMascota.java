@@ -70,7 +70,7 @@ public class ConstructorMascota {
 
         values = new ContentValues();
         values.put(Constantes.TB_MASCOTA_NAME, "Kyara");
-        values.put(Constantes.TB_MASCOTA_FOTO, R.drawable.puppy_black_brown);
+        values.put(Constantes.TB_MASCOTA_FOTO, R.drawable.puppy_white);
 
         db.insertarMascota(values);
 
@@ -92,6 +92,11 @@ public class ConstructorMascota {
     public int obtenerRateMascota(Mascota mascota) {
         BaseDatos bd = new BaseDatos(context);
         return bd.obtenerRateMascota(mascota);
+    }
+
+    public ArrayList<Mascota> obtenerMascotasFavoritas() {
+        BaseDatos db = new BaseDatos(context);
+        return db.obtenerMascotasFavoritas();
     }
 
 }

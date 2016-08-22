@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kenneth.android.petagram.R;
+import com.kenneth.android.petagram.model.ConstructorMascota;
 import com.kenneth.android.petagram.model.Mascota;
 
 import java.util.ArrayList;
@@ -42,8 +43,10 @@ public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaV
         holder.btnRating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ConstructorMascota constructor = new ConstructorMascota(activity);
+                constructor.rateMascota(mascota);
                 mascota.setRating(mascota.getRating()+1);
-                holder.tvRating.setText("" + mascota.getRating());
+                holder.tvRating.setText("" + constructor.obtenerRateMascota(mascota));
             }
         });
 

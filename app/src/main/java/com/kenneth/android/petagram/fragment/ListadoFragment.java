@@ -23,7 +23,6 @@ import java.util.ArrayList;
  */
 public class ListadoFragment extends Fragment implements IListadoFragmentView {
 
-    private ArrayList<Mascota> mascotas;
     private RecyclerView rvMascotas;
     private IListadoFragmentPresenter presenter;
 

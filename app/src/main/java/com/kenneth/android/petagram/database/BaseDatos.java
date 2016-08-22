@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import com.kenneth.android.petagram.model.Mascota;
 
@@ -41,7 +42,6 @@ public class BaseDatos extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL(qMascota);
         sqLiteDatabase.execSQL(qRates);
-//        sqLiteDatabase.close();
 
     }
 
@@ -115,6 +115,51 @@ public class BaseDatos extends SQLiteOpenHelper {
         db.close();
         return rate;
 
+    }
+
+    public ArrayList<Mascota> obtenerMascotasFavoritas() {
+
+        ArrayList<Mascota> mascotas = new ArrayList<>();
+
+        String query = "SELECT DISTINCT " +
+                Constantes.TB_MASCOTA + "." + Constantes.TB_MASCOTA_ID_MASCOTA + ", " +
+                Constantes.TB_MASCOTA + "." + Constantes.TB_MASCOTA_NAME + ", " +
+                Constantes.TB_MASCOTA + "." + Constantes.TB_MASCOTA_FOTO + ", " +
+                Constantes.TB_RATES_MASCOTA + "." + Constantes.TB_RATES_MASCOTA_RATE +
+                " FROM " + Constantes.TB_MASCOTA +
+                " JOIN " + Constantes.TB_RATES_MASCOTA + " ON " +
+                Constantes.TB_MASCOTA + "." + Constantes.TB_MASCOTA_ID_MASCOTA + " = " +
+                Constantes.TB_RATES_MASCOTA + "." + Constantes.TB_RATES_MASCOTA_ID_MASCOTA +
+                " ORDER BY " + Constantes.TB_MASCOTA + "." + Constantes.TB_MASCOTA_ID_MASCOTA +
+//                " GROUP BY " + Constantes.TB_MASCOTA + "." + Constantes.TB_MASCOTA_ID_MASCOTA +
+                " LIMIT 5";
+
+        Log.i("Mascotas Favoritas: ", query);
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor regs = db.rawQuery(query, null);
+
+        while (regs.moveToNext()) {
+            Mascota mascota = new Mascota();
+            mascota.setId(regs.getInt(0));
+            mascota.setName(regs.getString(1));
+            mascota.setFoto(regs.getInt(2));
+
+            String qRates = "SELECT COUNT(*) FROM " + Constantes.TB_RATES_MASCOTA + " WHERE " +
+                    Constantes.TB_RATES_MASCOTA_ID_MASCOTA + " = " + mascota.getId();
+
+            Cursor regRates = db.rawQuery(qRates, null);
+            if (regRates.moveToNext()) {
+                mascota.setRating(regRates.getInt(0));
+            } else {
+                mascota.setRating(0);
+            }
+
+            mascotas.add(mascota);
+        }
+
+        db.close();
+        return mascotas;
     }
 
 }
